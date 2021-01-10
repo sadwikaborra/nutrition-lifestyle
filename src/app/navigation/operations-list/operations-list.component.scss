@@ -1,0 +1,50 @@
+
+.operation-list{
+    ul#cat_nav li a:after {
+        display: none;
+    }
+    ul#cat_nav li {
+        cursor: pointer;
+    }
+    ul#cat_nav li a span {
+        font-size: 11px;
+        font-size: 1.1rem;
+        color: inherit;
+    }
+
+    .material-icons{
+        position: relative;
+        top: 4px;
+        margin-right: 10px;
+    }
+    p {
+        color: rgb(12, 1, 6);
+      }
+      #navigation {
+        width: 180px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 90%;
+        font-weigth: bold;
+        }
+        #navigation ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        }
+        #navigation li {
+        border-bottom: 1px solid #C3DBFB;
+        }
+        #navigation li a:link, #navigation li a:visited {
+        display: block;
+        padding: 5px 5px 5px 0.5em;
+        border-left: 12px solid #033CC2;
+        border-right: 1px solid #033CC2;
+        background-color: #5386F2;
+        color: #FFFFFF;
+        text-decoration: none;
+        }
+        #navigation li a:hover {
+        background-color: #033CC2;
+        color: #FFFFFF;
+        }
+}

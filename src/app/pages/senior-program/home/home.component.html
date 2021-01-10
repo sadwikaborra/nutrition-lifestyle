@@ -1,0 +1,47 @@
+<section id="description" *ngIf="seniorProgram">
+    <div class="row">
+        <div class="col-lg-12">
+            <ul>
+
+                <hr>
+                <li>
+
+                    <h5><p>{{seniorProgram.trainingCenterName}}</p></h5>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- /row -->
+    <div class="row">
+        <div class="col-lg-4">
+            <ul>
+                <li><strong>Business Id: </strong> &nbsp;{{seniorProgram.trainingCenterBusinessId}}</li>
+                <li><strong>Business Name:</strong> &nbsp;{{seniorProgram.centerShorBizName}}</li>
+
+            </ul>
+        </div>
+        <div class="col-lg-4">
+            <ul>
+                <li><strong>Contact Person: </strong> &nbsp;{{seniorProgram.contactPerson}}</li>
+                <li><strong>Website:</strong> &nbsp;{{seniorProgram.websiteUrl}}</li>
+
+            </ul>
+        </div>
+        <div class="col-lg-4">
+            <ul>
+                <li><strong>Management Id: </strong> &nbsp;{{seniorProgram.managementId}}</li>
+                <li><strong>Management Name: </strong> &nbsp;{{seniorProgram.managementName}}</li>
+            </ul>
+        </div>
+    </div>
+    <!-- /row -->
+</section>
+<div fxLayout="row" fxLayoutGap="20px">
+    <div class="operations" fxFlex="20">
+        <app-operations-list [operationList]="operationList"></app-operations-list>
+    </div>
+    <div class="details" fxFlex="80">
+
+        <router-outlet></router-outlet>
+    </div>
+</div>

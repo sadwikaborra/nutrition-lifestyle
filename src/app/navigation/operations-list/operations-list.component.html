@@ -1,0 +1,13 @@
+<aside id="sidebar" class="operation-list">
+    <div class="box_style_cat" id="navigation" >
+        <ul id="cat_nav">
+            <li *ngFor="let item of operationList">
+                <a (click)="navigate(item.route)">
+
+                    <p>{{ item.name}}</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+</aside>
